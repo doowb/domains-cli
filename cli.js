@@ -25,7 +25,7 @@ if (auth.token) {
   store.set('auth', auth);
 } else {
   console.error();
-  console.error(log.bold('  please specific authentication details'));
+  console.error(log.bold('  please specify authentication details'));
   console.error(log.gray('  authentication tokens can be created for an account at https://dnsimple.com'));
   console.error();
   console.error(log.bold('  --token, -t'));
