@@ -64,8 +64,11 @@ function checkDomain(domain, options, cb) {
         }
 
         try {
-          var data = JSON.parse(body).data;
-          acc[tld] = data.available;
+          var data = JSON.parse(body);
+          if (data.message) {
+            return next(new Error(data.message));
+          }
+          acc[tld] = data.data.available;
           next(null, acc);
         } catch (err) {
           next(err);
