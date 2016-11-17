@@ -13,6 +13,9 @@
     "index.js",
     "LICENSE"
   ],
+  "bin": {
+    "domains": "cli.js"
+  },
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -22,5 +25,17 @@
   },
   "keywords": [
     "generategenerator"
-  ]
+  ],
+  "dependencies": {
+    "array-unique": "^0.3.2",
+    "async-array-reduce": "^0.2.0",
+    "data-store": "^0.16.1",
+    "extend-shallow": "^2.0.1",
+    "log-utils": "^0.2.1",
+    "longest": "^1.0.1",
+    "pad-right": "^0.2.2",
+    "request": "^2.78.0",
+    "write-json": "^0.2.2",
+    "yargs-parser": "^4.0.2"
+  }
 }
