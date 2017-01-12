@@ -11,16 +11,14 @@
   "license": "MIT",
   "files": [
     "cli.js",
-    "index.js",
-    "LICENSE",
-    "README.md"
+    "index.js"
   ],
   "main": "index.js",
   "bin": {
     "domains": "cli.js"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6.0"
   },
   "scripts": {
     "test": "mocha"
@@ -43,11 +41,11 @@
   },
   "keywords": [
     "dnsimple",
-    "domains",
     "domain",
     "domain-name",
-    "website",
-    "hostname"
+    "domains",
+    "hostname",
+    "website"
   ],
   "verb": {
     "toc": false,
