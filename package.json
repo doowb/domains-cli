@@ -38,7 +38,8 @@
     "yargs-parser": "^4.0.2"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.11"
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.2.0"
   },
   "keywords": [
     "dnsimple",
