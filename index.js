@@ -17,10 +17,10 @@ function checkDomains(domains, options, cb) {
     cb = options;
     options = {};
   }
-  var opts = extend({}, options);
+  var opts = extend({baseUrl: baseUrl}, options);
   var authOpts = authOptions(opts);
 
-  whoami(authOpts, function(err, id) {
+  whoami(opts.baseUrl, authOpts, function(err, id) {
     if (err) return cb(err);
     authOpts.id = id;
     authOpts.tlds = arrayify(opts.tlds).reduce(function(acc, tld) {
@@ -35,7 +35,7 @@ function checkDomains(domains, options, cb) {
     var len = longest(arr).length;
 
     reduce(arr, {}, function(acc, domain, next) {
-      checkDomain(domain, authOpts, function(err, available) {
+      checkDomain(opts.baseUrl, domain, authOpts, function(err, available) {
         if (err) return next(err);
 
         if (opts.silent !== true) {
@@ -48,7 +48,7 @@ function checkDomains(domains, options, cb) {
   });
 }
 
-function checkDomain(domain, options, cb) {
+function checkDomain(baseUrl, domain, options, cb) {
   var opts = {
     headers: options.headers
   };
@@ -80,7 +80,7 @@ function checkDomain(domain, options, cb) {
   }, cb);
 }
 
-function whoami(options, cb) {
+function whoami(baseUrl, options, cb) {
   request(`${baseUrl}/whoami`, options, function(err, res, body) {
     if (err) return cb(err);
     if (res.statusCode > 400) {
