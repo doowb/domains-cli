@@ -1,4 +1,4 @@
-# domains-cli [![NPM version](https://img.shields.io/npm/v/domains-cli.svg?style=flat)](https://www.npmjs.com/package/domains-cli) [![NPM monthly downloads](https://img.shields.io/npm/dm/domains-cli.svg?style=flat)](https://npmjs.org/package/domains-cli)  [![NPM total downloads](https://img.shields.io/npm/dt/domains-cli.svg?style=flat)](https://npmjs.org/package/domains-cli)
+# domains-cli [![NPM version](https://img.shields.io/npm/v/domains-cli.svg?style=flat)](https://www.npmjs.com/package/domains-cli) [![NPM monthly downloads](https://img.shields.io/npm/dm/domains-cli.svg?style=flat)](https://npmjs.org/package/domains-cli)  [![NPM total downloads](https://img.shields.io/npm/dt/domains-cli.svg?style=flat)](https://npmjs.org/package/domains-cli) [![Linux Build Status](https://img.shields.io/travis/doowb/domains-cli.svg?style=flat&label=Travis)](https://travis-ci.org/doowb/domains-cli)
 
 > Check to see if domain names are available using the DNSimple api.
 
