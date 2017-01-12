@@ -1,12 +1,12 @@
 {
-  "name": "domains",
-  "description": "Check to see if domain names are available.",
+  "name": "domains-cli",
+  "description": "Check to see if domain names are available using the DNSimple api.",
   "version": "0.1.0",
-  "homepage": "https://github.com/doowb/domains",
+  "homepage": "https://github.com/doowb/domains-cli",
   "author": "Brian Woodward (https://github.com/doowb)",
-  "repository": "doowb/domains",
+  "repository": "doowb/domains-cli",
   "bugs": {
-    "url": "https://github.com/doowb/domains/issues"
+    "url": "https://github.com/doowb/domains-cli/issues"
   },
   "license": "MIT",
   "files": [
@@ -33,7 +33,7 @@
     "log-utils": "^0.2.1",
     "longest": "^1.0.1",
     "pad-right": "^0.2.2",
-    "request": "^2.78.0",
+    "request": "^2.79.0",
     "write-json": "^0.2.2",
     "yargs-parser": "^4.0.2"
   },
@@ -41,7 +41,12 @@
     "gulp-format-md": "^0.1.11"
   },
   "keywords": [
-    "generategenerator"
+    "dnsimple",
+    "domains",
+    "domain",
+    "domain-name",
+    "website",
+    "hostname"
   ],
   "verb": {
     "toc": false,
