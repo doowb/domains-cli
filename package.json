@@ -28,11 +28,12 @@
     "array-unique": "^0.3.2",
     "async-array-reduce": "^0.2.0",
     "data-store": "^0.16.1",
+    "dnsimple": "^2.4.0",
     "extend-shallow": "^2.0.1",
+    "lazy-cache": "^2.0.2",
     "log-utils": "^0.2.1",
     "longest": "^1.0.1",
     "pad-right": "^0.2.2",
-    "request": "^2.79.0",
     "write-json": "^0.2.2",
     "yargs-parser": "^4.0.2"
   },
